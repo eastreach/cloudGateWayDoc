@@ -15,19 +15,6 @@
 1. 每一个商户(groupId)申请一个appId.
 1. 对appId进行网关级或方法级授权.
 
-### 网关分类.
-1. [公共网关](gateway/commonGateWay.md): 基础元数据接口.
-1. [客房网关](gateway/kfGateWay.md): 客房静态元数据接口.
-1. [康乐网关](gateway/klGateWay.md): 康乐静态元数据接口.
-----
-1. [会员网关](gateway/memberGateWay.md): 会员接口.
-----
-1. [客房订单网关](gateway/kfOrderGateWay.md): 客房订单业务流程接口.
----
-1. [康乐扫码点餐](gateway/klOrderDCGateWay.md): 扫码点餐业务流程.
-1. [康乐外卖](gateway/klOrderWMGateWay.md): 外卖业务流程.
-1. [场地预约](gateway/klOrderYYGateWay.md): 场地挂号预约流程.
-
 
 
 
