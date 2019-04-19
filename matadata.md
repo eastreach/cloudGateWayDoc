@@ -20,6 +20,7 @@ public static final String PMSCheckIn = "PMSCheckIn";        //pms入住
 public static final String PMSCheckOut = "PMSCheckOut";      //pms退宿
 public static final String PMSNoShow = "PMSNoShow";          //pms NoShow
 ```
+![kf_order_state](./images/kf_order_state.png)
 
 #### 订单类型.
 1. 订单类型决定业务流程.

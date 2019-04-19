@@ -1,11 +1,11 @@
-### 瑞通CRS网关接口文档。
+#### 瑞通CRS网关接口文档。
 
-1. [domain.md](domain.md):      对象模型.
-1. [matadata.md](matadata.md):  系统固定编码.
 1. [api.md](api.md):            接口规范.
+1. [domain.md](domain.md):      对象模型.
+1. [matadata.md](matadata.md):  固定编码.
 1. [changelist.md](changelist.md): 更新日志.
 
-### 网关分类.
+##### 网关分类.
 1. [公共网关](gateway/commonGateWay.md): 基础元数据接口.
 1. [客房网关](gateway/kfGateWay.md): 客房静态元数据接口.
 1. [康乐网关](gateway/klGateWay.md): 康乐静态元数据接口.
