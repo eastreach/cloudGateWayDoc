@@ -18,7 +18,7 @@
 1. [klOrderVerify](#klOrderVerify)  场地预约业务订单核销.
 1. [klOrderSelect](#klOrderSelect)  场地预约业务订单查询.
 
-##### [postInventorySelect]{#postInventorySelect}
+##### postInventorySelect
 1. /klOrderYYGateWay/postInventorySelect
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
@@ -132,7 +132,7 @@
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | orderId | 订单号 | string | N |  |  |
-##### [klOrderSelect]{#klOrderSelect}
+##### klOrderSelect
 1. /klOrderYYGateWay/klOrderSelect:           康乐订单查询.
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
