@@ -1,15 +1,25 @@
-### klOrderYYGateWay
-1. 会场预约业务流程.
-1. 无商品和支付相关业务。
-1. 控制每个场地每个时段的预约人数。
-1. 预约时间限制，取消时间限制。
-1. 预约会员等级限制。
+### klOrderYYGateWay: 康乐场地预约业务网关.
 
+#### 业务说明.
+1. 根据场地的容量大小限制预约人数。
+1. 预约时段根据营业时段自定义设置。
 
-#### action.
+#### 康乐业务流程选项(CRS后台设置并进行校验).
+1. payFlag:     支付方式(预付，现付).
+1. confirmFlag: 订单确认方式(自动确认，手工确认)。
+1. checkFlag:  订单审核导入线下系统方式(自动审核，手工审核).
+1. cancelFlag: 订单取消方式(不可取消，限时取消，手工取消).
+1. levelLimit: 预约人身份校验(散客，实体会员，指定会员星级)。
 
-##### 康乐会场预约业务流程.
-1. /klOrderYYGateWay/postInventorySelect:     商品库存查询.
+#### 业务流程action.
+1. [postInventorySelect](#postInventorySelect)  场地可用库存查询.
+1. [klOrderAdd](#klOrderAdd)  场地预约业务下单.
+1. [klOrderCancel](#klOrderCancel)  场地预约业务订单取消.
+1. [klOrderVerify](#klOrderVerify)  场地预约业务订单核销.
+1. [klOrderSelect](#klOrderSelect)  场地预约业务订单查询.
+
+##### [postInventorySelect]{#postInventorySelect}
+1. /klOrderYYGateWay/postInventorySelect
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -79,7 +89,8 @@
   ]
 }
 ```
-1. /klOrderYYGateWay/klOrderAdd:              康乐下单.
+##### [klOrderAdd]{#klOrderAdd}
+1. /klOrderYYGateWay/klOrderAdd
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -89,8 +100,8 @@
 | orderTime | 订单时间 | datetime | N |  |  |
 | name | 姓名 | string | N |  |  |
 | telephone | 电话 | string | N |  |  |
-| klOrderPostList | 位置想象 | list | N |  |  |
 | memo | 备注 | string | Y |  |  |
+| klOrderPostList | 位置明细列表 | list | N |  |  |
 ```
 {
   "service": "klOrderYYGateWay",
@@ -115,12 +126,14 @@
   ]
 }
 ```
-1. /klOrderYYGateWay/klOrderSelect:           康乐订单查询.
+##### [klOrderCancel]{#klOrderCancel}
+1. /klOrderYYGateWay/klOrderCancel:           康乐订单取消.
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | orderId | 订单号 | string | N |  |  |
-1. /klOrderYYGateWay/klOrderCancel:           康乐订单取消.
+##### [klOrderSelect]{#klOrderSelect}
+1. /klOrderYYGateWay/klOrderSelect:           康乐订单查询.
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
