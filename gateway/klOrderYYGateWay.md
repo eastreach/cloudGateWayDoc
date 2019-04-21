@@ -89,7 +89,7 @@
   ]
 }
 ```
-##### [klOrderAdd]{#klOrderAdd}
+##### klOrderAdd
 1. /klOrderYYGateWay/klOrderAdd
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
@@ -126,7 +126,7 @@
   ]
 }
 ```
-##### [klOrderCancel]{#klOrderCancel}
+##### klOrderCancel
 1. /klOrderYYGateWay/klOrderCancel:           康乐订单取消.
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |

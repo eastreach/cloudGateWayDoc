@@ -21,7 +21,7 @@
 1. [klOrderCancel](#klOrderCancel)  点餐业务业务订单取消.
 1. [klOrderSelect](#klOrderSelect)  点餐业务业务订单查询.
 
-##### [menuInventorySelect]{#menuInventorySelect}
+##### menuInventorySelect
 1. /klOrderDCGateWay/menuInventorySelect:     商品库存查询.
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
@@ -83,7 +83,7 @@
   ]
 }
 ```
-##### [klOrderAdd]{#klOrderAdd}
+##### klOrderAdd
 1. /klOrderDCGateWay/klOrderAdd:              康乐扫码点餐业务下单.
 
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
@@ -143,7 +143,11 @@
   }
 }
 ```
+##### klOrderPayExt
 1. /klOrderDCGateWay/klOrderPayExt:           康乐订单多笔支付.
+##### klOrderPay
 1. /klOrderDCGateWay/klOrderPay:              康乐订单支付.
+##### klOrderSelect
 1. /klOrderDCGateWay/klOrderSelect:           康乐订单查询.
+##### klOrderCancel
 1. /klOrderDCGateWay/klOrderCancel:           康乐订单取消.
