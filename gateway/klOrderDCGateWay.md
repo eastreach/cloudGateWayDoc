@@ -145,9 +145,41 @@
 ```
 ##### klOrderPayExt
 1. /klOrderDCGateWay/klOrderPayExt:           康乐订单多笔支付.
+
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| orderId | 订单号 | string | N |  |  |
+| klOrderPayList | 订单支付明细 | list | N |  |  |
+```
+{
+  "service": "klOrderDCGateWay",
+  "action": "klOrderPayExt",
+  "groupId": "bjklrqdjd",
+  "crsHotelId": "bjklrqdjd",
+  "crsClientCode": "21",
+  "orderId": "201904211214046",
+  "klOrderPayList": [
+    {
+      "payId": "c8771ab16cd74f0d9eee2d9cb6cbf31e",      //支付ID
+      "payTime": "2019-04-21 12:18:08",                 //支付时间
+      "payKind": "1",                       //付款方式，固定编码
+      "payPrice": 5,                        //支付金额
+      "couponId": ""                        //卡ID或者券ID
+    }
+  ]
+}
+```
 ##### klOrderPay
 1. /klOrderDCGateWay/klOrderPay:              康乐订单支付.
 ##### klOrderSelect
 1. /klOrderDCGateWay/klOrderSelect:           康乐订单查询.
+
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| orderId | 订单号 | string | N |  |  |
 ##### klOrderCancel
 1. /klOrderDCGateWay/klOrderCancel:           康乐订单取消.
+
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| orderId | 订单号 | string | N |  |  |
