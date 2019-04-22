@@ -15,7 +15,6 @@
 1. [postInventorySelect](#postInventorySelect)  场地可用库存查询.
 1. [klOrderAdd](#klOrderAdd)  场地预约业务下单.
 1. [klOrderCancel](#klOrderCancel)  场地预约业务订单取消.
-1. [klOrderVerify](#klOrderVerify)  场地预约业务订单核销.
 1. [klOrderSelect](#klOrderSelect)  场地预约业务订单查询.
 
 ##### postInventorySelect
@@ -100,6 +99,7 @@
 | orderTime | 订单时间 | datetime | N |  |  |
 | name | 姓名 | string | N |  |  |
 | telephone | 电话 | string | N |  |  |
+| memberId | 会员ID | string | Y |  | 会员星级限定 |
 | memo | 备注 | string | Y |  |  |
 | klOrderPostList | 位置明细列表 | list | N |  |  |
 ```
