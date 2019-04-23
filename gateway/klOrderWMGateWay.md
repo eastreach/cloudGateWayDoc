@@ -41,6 +41,7 @@
 | name | 姓名 | string | N |  |  |
 | telephone | 电话 | string | N |  |  |
 | address | 地址 | string | N |  |  |
+| arriveTime | 期望送达时间 | datetime | Y |  |  |
 | memo | 备注 | string | Y |  |  |
 | klOrderMenuList | 订单商品明细列表 | list | N |  |  |
 
