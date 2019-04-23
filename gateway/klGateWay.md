@@ -67,3 +67,10 @@ public static final String klyy = "klyy";                   //康乐站点预约
 | crsHotelId | 渠道酒店ID | string | N |  |  |
 | crsClientCode | 渠道站点编号 | string | N |  |  |
 
+##### postSelectBatch
+1. /klGateWay/postSelectBatch:          台位信息查询.
+
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| crsHotelId | 渠道酒店ID | string | N |  |  |
+| crsClientCode | 渠道站点编号 | string | N |  |  |
