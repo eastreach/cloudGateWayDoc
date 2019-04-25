@@ -96,7 +96,7 @@
 | allPrice | 订单总额 | double | N |  | 后台校验 |
 | name | 姓名 | string | N |  |  |
 | telephone | 电话 | string | N |  |  |
-| memo | 备注 | string | Y |  |  |
+| memo | 备注 | string | Y |  | 整单备注 |
 | klOrderMenuList | 订单商品明细列表 | list | N |  |  |
 ```
 {
@@ -116,6 +116,7 @@
       "crsClientCode": "21",
       "crsSpendCode": "0102",
       "menuCount": 1
+      "memo": "单品备注"
     }
   ]
 }
