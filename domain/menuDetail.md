@@ -15,5 +15,5 @@ private String crsSpendCode = "";       //渠道商品编号
 private String crsSpendName = "";       //商品名称
 private Double menuPrice;               //商品单价
 private Integer sortId = 0;
-
+private String pic;
 ```

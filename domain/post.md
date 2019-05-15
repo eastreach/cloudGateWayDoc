@@ -12,4 +12,5 @@ private String crsPostName;         //位置名称
 private String hotelId;
 private String clientCode;
 private String postCode;
+private String pic;
 ```

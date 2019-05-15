@@ -25,7 +25,7 @@ public static final String klyy = "klyy";                   //康乐站点预约
 1. [menuKindSelectBatch](#menuKindSelectBatch)  商品种类元数据.
 1. [menuDetailSelectBatch](#menuDetailSelectBatch)  商品明细元数据.
 1. [postSelectBatch](#postSelectBatch)  消费位置元数据.
-
+ 
 
 ##### timeDurSelectBatch
 1. /klGateWay/timeDurSelectBatch:       查询groupId授权的营业时段数据.

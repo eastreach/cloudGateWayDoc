@@ -16,6 +16,8 @@
 1. [康乐扫码点餐](gateway/klOrderDCGateWay.md): 扫码点餐业务流程.
 1. [康乐外卖](gateway/klOrderWMGateWay.md): 外卖业务流程.
 1. [场地预约](gateway/klOrderYYGateWay.md): 场地挂号预约流程.
+---
+1. [电视网关](gateway/tvGateWay.md): 电视网关.
 
 - 版本号: 3.0.1
 - 发布时间: 2019-04-19
