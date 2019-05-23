@@ -18,6 +18,7 @@
 1. [场地预约](gateway/klOrderYYGateWay.md): 场地挂号预约流程.
 ---
 1. [电视网关](gateway/tvGateWay.md): 电视网关.
+1. [门锁网关](gateway/doorGateWay.md): 门锁网关,门锁厂家提供调用服务.
 
 - 版本号: 3.0.1
 - 发布时间: 2019-04-19
