@@ -19,20 +19,20 @@
   "data": [
     {
       "num": 16352,
-      "roomId": "8601",
-      "name": "刘备",
-      "sex": "1",
+      "roomId": "8601",     
+      "name": "刘备",         //宾客名称
+      "sex": "1",            //性别1男2女其他未知.
       "race": "HA",
       "idName": "11",
-      "inTime": "2018-04-10 09:49:44",
-      "outTime": "2018-04-11 17:00:00",
+      "inTime": "2018-04-10 09:49:44",      //入住时间
+      "outTime": "2018-04-11 17:00:00",     //拟离时间
       "ifVip": "N",
       "operator": "001",
       "ifLeave": "N",
       "guestKind": "1",
-      "countNum": 9822,
+      "countNum": 9822,               //房间账号
       "preNo": 0,
-      "NewPrice": 288,
+      "NewPrice": 288,                //入住单价
       "surName": "",
       "firstName": "",
       "nation": "CHN",
@@ -69,19 +69,19 @@
     "stayTime": 594698,
     "stayTimeStr": "9分",
     "roomId": "8601",
-    "outBalance": 112,
-    "inBalance": 600,
-    "balance": 488
+    "outBalance": 112,        //房间账号消费
+    "inBalance": 600,         //房间账号押金
+    "balance": 488            //房间账号余额
   },
   "billInfo": [
     {
       "memo": "青岛啤酒*1.0*6.0",
-      "name": "青岛啤酒*1.0*6.0",
-      "dt": "2018-04-10 09:59:20",
-      "mountin": "0",
-      "mountout": "6.0",
-      "mountsum": 6,
-      "flag": "1"
+      "name": "青岛啤酒*1.0*6.0",         //商品名称
+      "dt": "2018-04-10 09:59:20",      //消费时间
+      "mountin": "0",                 
+      "mountout": "6.0",          
+      "mountsum": 6,                    //金额         
+      "flag": "1"                       //1消费, －1收款
     },
     {
       "memo": "雪津啤酒*1.0*6.0",
