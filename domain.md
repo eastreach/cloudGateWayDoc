@@ -1,4 +1,9 @@
 ### 对象模型
+1. 集团商户(groupId)下有多个分店(hotelId).
+1. 单体店(hotelId=groupId).
+1. 分店(hotelId)下有多个康乐站点(client).
+1. 每个康乐站点独立进行商品售卖和管理.
+
 ####  静态元数据.
 1. [hotel](domain/hotel.md)  分店信息.
 1. [client](domain/client.md)  康乐站点.

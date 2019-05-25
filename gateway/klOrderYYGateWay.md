@@ -29,8 +29,8 @@
 | crsPostCode | 位置编号 | string | Y |  | 可选过滤 |
 ```
 {
-  "service": "klOrderYYGateWay",
-  "action": "postInventorySelect",
+  "appId": "",
+  "appSecret": "",
   "crsHotelId": "bjklrqdjd",
   "crsClientCode": "21",
   "crsPostCode": "202",
@@ -104,8 +104,8 @@
 | klOrderPostList | 位置明细列表 | list | N |  |  |
 ```
 {
-  "service": "klOrderYYGateWay",
-  "action": "klOrderAdd",
+  "appId": "",
+  "appSecret": "",
   "crsHotelId": "bjklrqdjd",
   "crsClientCode": "21",
   "orderId": "201904200938044",

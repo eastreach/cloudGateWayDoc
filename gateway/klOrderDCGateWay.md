@@ -30,8 +30,8 @@
 | crsClientCode | 渠道站点编号 | string | N |  |  |
 ```
 {
-  "service": "klOrderDCGateWay",
-  "action": "menuInventorySelect",
+  "appId": "",
+  "appSecret": "",
   "crsHotelId": "bjklrqdjd",
   "crsClientCode": "21"
 }
@@ -100,8 +100,8 @@
 | klOrderMenuList | 订单商品明细列表 | list | N |  |  |
 ```
 {
-  "service": "klOrderDCGateWay",
-  "action": "klOrderAdd",
+  "appId": "",
+  "appSecret": "",
   "crsHotelId": "bjklrqdjd",
   "crsClientCode": "21",
   "crsPostCode": "202",
@@ -153,8 +153,8 @@
 | klOrderPayList | 订单支付明细 | list | N |  |  |
 ```
 {
-  "service": "klOrderDCGateWay",
-  "action": "klOrderPayExt",
+  "appId": "",
+  "appSecret": "",
   "groupId": "bjklrqdjd",
   "crsHotelId": "bjklrqdjd",
   "crsClientCode": "21",
