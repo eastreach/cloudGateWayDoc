@@ -8,8 +8,9 @@
 1. [specification.md](specification.md): 接口规范.
 1. [metadata.md](metadata.md):  元数据编码.
 1. [domain.md](domain.md):      对象模型.
-1. [gateway.md](gateway.md):      网关分类.
 1. [changelist.md](changelist.md): 更新日志.
+#### 网关调用.
+1. [gateway.md](gateway.md):      网关分类.
 
 - 北京昆仑瑞祺科技发展有限公司
 - 010-62357019转119
