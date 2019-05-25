@@ -13,7 +13,7 @@
 | hotelId | 酒店ID | string | N |  |  |
 | roomId | 房间号 | string |N|  |  |
 ##### 响应数据.
- ```json
+ ```
 {
   "state": "success",
   "data": [
@@ -59,7 +59,7 @@
 | roomId | 房间号 | string |N|  |  |
 
 ##### 响应数据.
- ```json
+ ```
 {
   "state": "success",
   "roomInfo": {
@@ -78,9 +78,9 @@
       "memo": "青岛啤酒*1.0*6.0",
       "name": "青岛啤酒*1.0*6.0",         //商品名称
       "dt": "2018-04-10 09:59:20",      //消费时间
-      "mountin": "0",                 
-      "mountout": "6.0",          
-      "mountsum": 6,                    //金额         
+      "mountin": "0",                   //收款   
+      "mountout": "6.0",                //消费
+      "mountsum": 6,                    //金额=(mountout-mountin)*flag         
       "flag": "1"                       //1消费, －1收款
     },
     {
@@ -106,7 +106,7 @@
       "memo": "8601",
       "dt": "2018-04-10 09:49:44",
       "mountin": 600,
-      "mountout": "600.0",
+      "mountout": "",
       "mountsum": 600,
       "flag": "-1"
     }
