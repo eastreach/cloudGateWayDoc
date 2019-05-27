@@ -27,9 +27,22 @@
 
 ##### memberSelect
 1. /memberGateWay/memberSelect:             会员信息查询.
+###### 请求参数.
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| memberId | 渠道会员ID | string | N |  |  |
 
 ##### memberAdd
 1. /memberGateWay/memberAdd:                新增会员.
+###### 请求参数.
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| memberId | 会员ID | string | N |  |  |
+| name | 姓名 | string |Y|  |  |
+| telephone | 电话 | string |Y|  |  |
+| birthday | 出生日期 | date |Y|  |  |
+| sex | 性别 | integer |Y|  | 1男,2女,3未知 |
+| memo | 备注 | string |Y|  |  |
 
 ##### memberUpdate
 1. /memberGateWay/memberUpdate:             修改会员.

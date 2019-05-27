@@ -5,7 +5,7 @@
 -----------------
 
 
-### guestInfoSelect
+#### guestInfoSelect
 1. /tvGateWay/guestInfoSelect
 ##### 请求数据
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
@@ -50,7 +50,7 @@
 }
  ```
 
-### billInfoSelect
+#### billInfoSelect
 1. /tvGateWay/billInfoSelect
 ##### 请求数据.
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |

@@ -12,6 +12,7 @@
 1. [康乐外卖](gateway/klOrderWMGateWay.md): 外卖业务流程.
 1. [场地预约](gateway/klOrderYYGateWay.md): 场地挂号预约流程.
 ---
+1. [短信网关](gateway/smsGateWay.md): 短信网关.
 1. [电视网关](gateway/tvGateWay.md): 电视网关.
 1. [门锁网关](gateway/doorGateWay.md): 门锁网关,门锁厂家提供调用服务.
 
