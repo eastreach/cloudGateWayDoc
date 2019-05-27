@@ -11,7 +11,7 @@
 ##### 请求数据.
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| hotelId | 酒店ID | string | Y |  |  |
+| crsHotelId | 渠道酒店ID | string | Y |  |  |
 
 ##### 响应数据.
 ```json
@@ -34,7 +34,6 @@
 | content | 短信内容 | string |Y|  |  |
 ```json
 {
-  "groupId": "bjklrqdjd",
   "crsHotelId": "bjklrqdjd",
   "telephone": "13701010101",
   "content": "尊敬的客户您好"
