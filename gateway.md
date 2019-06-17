@@ -15,6 +15,7 @@
 1. [短信网关](gateway/smsGateWay.md): 短信网关.
 1. [电视网关](gateway/tvGateWay.md): 电视网关.
 1. [门锁网关](gateway/doorGateWay.md): 门锁网关,门锁厂家提供调用服务.
+1. [消息网关](gateway/messageGateWay.md): 消息通知网关.
 
 
 
