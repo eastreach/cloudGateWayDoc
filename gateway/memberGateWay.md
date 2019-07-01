@@ -102,6 +102,7 @@
       "state": 1,
       "activityId": "",
       "couponType": 0,
+      "onLineState": 0,    //线上状态， 1线上可用，其他线上不可用
       "couponId": "d3605d11d2ea4009bc4425a2ec4e55bf",     //券ID,唯一流水号,二维码
       "confirmId": "d3605d11d2ea4009bc4425a2ec4e55bf",
       "couponCode": "DJQ20",                            //券代码,客户添加
