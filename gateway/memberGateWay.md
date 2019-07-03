@@ -2,7 +2,6 @@
 1. 会员网关.
 
 #### action。
-1. [CouponTypeSelectBatch](#CouponTypeSelectBatch)      卡券数据查询.
 1. [memberBind](#memberBind)                            会员绑定.
 1. [memberUnBind](#memberUnBind)                        取消绑定.
 1. [memberSelect](#memberSelect)                        会员信息查询.
@@ -10,33 +9,29 @@
 1. [memberUpdate](#memberUpdate)                        修改会员.
 1. [memberBalanceSelect](#memberBalanceSelect)          消费明细查询.
 1. [memberJfBalanceSelect](#memberJfBalanceSelect)      积分明细查询.
-1. [memberCouponSelect](#memberCouponSelect)            卡券查询.
+1. [memberCouponSelect](#memberCouponSelect)            会员已领卡券查询.
+1. [memberCouponTrans](#memberCouponTrans)              会员已领卡券转赠.
 1. [activitySelectBatch](#activitySelectBatch)          会员活动查询.
 1. [activitySelect](#activitySelect)                    活动详情查询.
 1. [memberActivity](#memberActivity)                    参加会员活动.
 1. [memberActivityLogSelect](#memberActivityLogSelect)  活动日志查询.
+----------
+1. [couponTypeSelectBatch](#couponTypeSelectBatch)      可领券查询.
+1. [couponTypePut](#couponTypePut)                      领券.
 
-##### CouponTypeSelectBatch
-1. /memberGateWay/CouponTypeSelectBatch:    卡券数据查询.
+##### couponTypeSelectBatch
+1. /memberGateWay/couponTypeSelectBatch:    可领券信息查询.
+###### 请求参数.
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| memberId | 渠道会员ID | string | N |  |  |
 ```
 {
   "state": "success",
   "code": 0,
   "msg": "操作成功",
-  "couponTypeList": [
-    {
-      "id": 2,
-      "state": 1,
-      "createDt": "2018-07-16 10:53:38",
-      "groupId": "bjklrqdjd",         //集团ID
-      "hotelId": "bjklrqdjd",         //分店ID
-      "code": "DJQ100",               //卡券代码 hotelId + code 唯一.
-      "name": "100元代金券",           //卡券名称
-      "memo": "",
-      "couponKind": "DJQ",            //卡券种类,固定编码, DJQ代金券, ZKQ折扣券,SPQ商品券.
-      "couponValue": 100,             //卡券面值
-      "validDays": 3                  //卡券有效天数.
-    },
+  "total": 2,             //卡券总数量
+  "rows": [
     {
       "id": 3,
       "state": 1,
@@ -44,15 +39,54 @@
       "groupId": "bjklrqdjd",
       "hotelId": "bjklrqdjd",
       "code": "DJQ20",
-      "name": "20元代金券",
+      "name": "20元代金券",       //卡券名称
       "memo": "",
       "couponKind": "DJQ",
       "couponValue": 20,
-      "validDays": 5
+      "validDays": 5,
+      "bValue": 100,
+      "eValue": 1000,
+      "onLineState": 0,
+      "total": 100,
+      "lpd": 1,
+      "memberState": 1,         //当前会员是否可领 1可领,非1不可领
+      "todayTotal": 100,          //当天总数量
+      "todayAvailable": 100,      //当前剩余可领数量
+      "memberCount": 0          //当前会员已领数量
+    },
+    {
+      "id": 2,
+      "state": 1,
+      "createDt": "2018-07-16 10:53:38",
+      "groupId": "bjklrqdjd",
+      "hotelId": "bjklrqdjd",
+      "code": "DJQ100",
+      "name": "100元代金券",
+      "memo": "",
+      "couponKind": "DJQ",
+      "couponValue": 100,
+      "validDays": 3,
+      "bValue": 200,
+      "eValue": 1000,
+      "onLineState": 0,
+      "total": 100,
+      "lpd": 1,
+      "memberState": 1,
+      "todayTotal": 0,
+      "todayAvailable": 0,
+      "memberCount": 0
     }
   ]
 }
 ```
+
+##### couponTypePut
+1. /memberGateWay/couponTypePut:    领券.
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| memberId | 渠道会员ID | string | N |  |  |
+| hotelId | 分店ID | string | N |  |  |
+| code | 卡券代码 | string | N |  |  |
 
 ##### memberBind
 1. /memberGateWay/memberBind:               会员绑定.
@@ -127,6 +161,14 @@
   ]
 }
 ```
+
+##### memberCouponTrans
+1. /memberGateWay/memberCouponTrans:       卡券转赠.
+| 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| couponId | 分店ID | string | N |  |  |
+| memberId | 发券渠道会员ID | string | N |  |  |
+| toMemberId | 收券渠道会员ID | string | N |  |  |
 
 ##### activitySelectBatch
 1. /memberGateWay/activitySelectBatch:      会员活动查询.
