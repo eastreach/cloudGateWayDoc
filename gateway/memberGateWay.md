@@ -82,6 +82,7 @@
 
 ##### couponTypePut
 1. /memberGateWay/couponTypePut:    领券.
+###### 请求参数
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | memberId | 渠道会员ID | string | N |  |  |
@@ -164,6 +165,7 @@
 
 ##### memberCouponTrans
 1. /memberGateWay/memberCouponTrans:       卡券转赠.
+###### 请求参数
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | couponId | 分店ID | string | N |  |  |
