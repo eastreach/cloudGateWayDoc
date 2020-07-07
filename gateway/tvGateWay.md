@@ -1,17 +1,17 @@
-### [tvGateWay]智能电视网关接口
+## [tvGateWay] 智能电视网关接口
 
-1. [guestInfoSelect](#guestInfoSelect)   单房间宾客信息查询.
-1. [billInfoSelect](#billInfoSelect)  单房间账务信息查询.
------------------
+1. [guestInfoSelect](#guestInfoSelect)   房间入住宾客信息查询.
+1. [billInfoSelect](#billInfoSelect)  房间账务信息查询.
 
+###guestInfoSelect
+1. 房间入住宾客信息查询
+1. [/tvGateWay/guestInfoSelect]
 
-#### guestInfoSelect
-1. /tvGateWay/guestInfoSelect
-##### 请求数据
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | hotelId | 酒店ID | string | N |  |  |
 | roomId | 房间号 | string |N|  |  |
+
 ##### 响应数据.
  ```
 {
@@ -50,9 +50,10 @@
 }
  ```
 
-#### billInfoSelect
-1. /tvGateWay/billInfoSelect
-##### 请求数据.
+###billInfoSelect
+1. 房间账务信息查询
+1. [/tvGateWay/billInfoSelect]
+
 | 字段名称 | 字段描述 | 类型 | 允许为空 | 长度 | 说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | hotelId | 酒店ID | string | N |  |  |
@@ -113,12 +114,6 @@
   ]
 }
  ```
-
-
-
-
-
-
 
 
 
